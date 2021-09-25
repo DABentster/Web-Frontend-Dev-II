@@ -27,7 +27,7 @@ function addition() {
 }
 
 /* 
- * addition() function
+ * subtraction() function
  * input: two number variables value n1 and n2
  * output: the result from the subtraction of n1 and n2
  *         n1 - n2
@@ -39,6 +39,12 @@ function subtraction() {
     document.getElementById("output").innerHTML = out;
 }
 
+/*
+ * multiplication() function
+ * input: two number variables value n1 and n2
+ * output: the result from the multiplication of n1 and n2
+ *         n1 * n2
+ */
 function multiplication() {
     let n1 = parseInt(document.getElementById("num1").value);
     let n2 = parseInt(document.getElementById("num2").value);
@@ -46,6 +52,12 @@ function multiplication() {
     document.getElementById("output").innerHTML = out;
 }
 
+/*
+ * division() function
+ * input: two number variables value n1 and n2
+ * output: the result from the division of n1 and n2
+ *         n1 / n2
+ */
 function division() {
     let n1 = parseInt(document.getElementById("num1").value);
     let n2 = parseInt(document.getElementById("num2").value);
