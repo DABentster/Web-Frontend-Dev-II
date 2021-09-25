@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="David Bentley, ">
+    <link rel="stylesheet" href="css/week02.css">
+    <script src="js/week02.js"></script>
+    <title>Adding Machine</title>
+</head>
+
+<body>
+    <h1>Week 2 Group Assignemnt: Adding Machine</h1>
+    <ul>
+        <li><a href="index.html">Back to WDD 330 Assignments</a></li>
+    </ul>
+    <main>
+        <h2>Adding Machine</h2>
+        <form action="">
+            <p>
+                <!--Input-->
+                First Number:
+                <span class="input-field">
+                    <span class="status-icon"><img id="num1-icon" src="img/icon-info.png" />
+                        <span id="num1-tooltip" class="tooltip">Enter a number</span>
+                    </span>
+                    <input id="num1" type="number" size="16" placeholder="100" />
+                </span><br /><br />
+                Seccond Number:
+                <span class="input-field">
+                    <span class="status-icon"><img id="num2-icon" src="img/icon-info.png" />
+                        <span id="num2-tooltip" class="tooltip">Enter a number</span>
+                    </span>
+                    <input id="num2" type="number" size="16" placeholder="42" />
+                </span><br /><br />
+                <!--Button to calculate and display Payment-->
+                <button type="button" onclick="summation()">Summation</button>
+                <button type="button" onclick="addition()">+</button>
+                <button type="button" onclick="subtraction()">-</button>
+                <button type="button" onclick="multiplication()">X</button>
+                <button type="button" onclick="division()">%</button>
+                <input type="reset" />
+            </p>
+            <div id="output" class="output-field"></div>
+        </form>
+    </main>
+</body>
+
+</html>

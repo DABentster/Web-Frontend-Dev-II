@@ -1,0 +1,75 @@
+body {
+  background:rgb(219,219,240);
+}
+main {
+    background: linear-gradient(90deg, rgba(120,120,120,0.5) 0%, rgba(187,187,207,0.5) 27%, rgba(244,250,252,0.5) 35%, rgba(180,180,196,0.5) 46%, rgba(153,153,153,0.5) 51%, rgba(247,253,255,0.5) 71%, rgba(238,243,245,0.5) 85%, rgba(163,163,163,0.5) 94%, rgba(219,219,240,0.5) 100%);
+    width:400px; margin:auto;
+    text-align:left;
+    padding:20px;
+    border: solid 2px #999999;
+    border-radius: 20px;
+}
+h1, h2 {
+    text-align:center;
+}
+ul {
+    text-align:center;
+    list-style-position:inside;
+    list-style: none;
+}
+.input-field {
+    float:right;
+}
+.input-field img {
+    width: 22px;
+    vertical-align: top;
+}
+.output-field {
+    background:rgba(180,180,196,0.5);
+    margin:auto;
+    width:auto;
+    height:20px;
+    padding:10px;
+    border: solid 2px #999999;
+    border-radius: 4px;
+}
+button, input {
+    background:rgba(180,180,196,0.5);
+}
+
+/* Tooltip Rules */
+.status-icon {
+  position: relative;
+  display: inline-block;
+}
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.status-icon:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+

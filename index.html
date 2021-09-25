@@ -3,14 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="js/main.js"></script>
+    <script> //src="js/main.js"
+        function populateDynamicToC() {
+            const links = [
+                { label: 'Assignment Week 01: Test', url: 'test.html', },
+                { label: 'Assignment Week 02: Adding Machine', url: 'week02.html', },
+                { label: 'Assignment Week ##: NAME', url: 'week##.html', },
+            ];
+
+            const ol = document.getElementById('table_of_contents');
+            links.forEach(link => {
+                let li = document.createElement('li');
+                let a = document.createElement('a');
+                a.setAttribute('href', link.url);
+                a.innerText = link.label;
+                li.appendChild(a);
+                ol.appendChild(li);
+            });
+        }
+    </script>
     <title>David Bentley's Assignments</title>
 </head>
 
 <body style="background:#ffffff; width:500px; margin:auto; text-align:left; padding:20px; border:solid 2px #000000">
     <h1>WDD 330 - Web Frontend Development II</h1>
     <h2>David Bentley's Assignments</h2>
-    <ol id="table_of_contents" style="list-style-position:inside; text-decoration:none;">
+    <ol id="table_of_contents" onload="populateDynamicToC()" style="list-style-position:inside; text-decoration:none;">
         <li><a href="test.html">Assignment Week 02: Assigment Name</a></li>
     </ol>
 </body>
