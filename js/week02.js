@@ -43,7 +43,7 @@ function subtraction() {
  * multiplication() function
  * input: two number variables value n1 and n2
  * output: the result from the multiplication of n1 and n2
- *         n1 *  n2
+ *         n1 * n2
  */
 function multiplication() {
     let n1 = parseInt(document.getElementById("num1").value);
