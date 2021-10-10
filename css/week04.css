@@ -1,0 +1,15 @@
+td {
+    border-right:1px solid black;
+    border-bottom: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+td:last-child {
+    border-right: 0;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}

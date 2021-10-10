@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CIT 330 Group Assignment">
+    <meta name="author" content="Adam Finder, David Bentley">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/week04.css">
+    <script src=js/week04.js></script>
+</head>
+
+<body>
+    <table id="board">
+        <tr>
+            <td id="0" class="box" ontouchend="placeMark(0)" onclick="placeMark(0)"></td>
+            <td id="1" class="box" ontouchend="placeMark(1)" onclick="placeMark(1)"></td>
+            <td id="2" class="box" ontouchend="placeMark(2)" onclick="placeMark(2)"></td>  
+        </tr>
+        <tr>
+            <td id="3" class="box" ontouchend="placeMark(3)" onclick="placeMark(3)"></td>
+            <td id="4" class="box" ontouchend="placeMark(4)" onclick="placeMark(4)"></td>
+            <td id="5" class="box" ontouchend="placeMark(5)" onclick="placeMark(5)"></td>   
+        </tr>
+        <tr>
+            <td id="6" class="box" ontouchend="placeMark(6)" onclick="placeMark(6)"></td>
+            <td id="7" class="box" ontouchend="placeMark(7)" onclick="placeMark(7)"></td>
+            <td id="8" class="box" ontouchend="placeMark(8)" onclick="placeMark(8)"></td>   
+        </tr>
+    </table>
+    <p>Current Player: <span id="currentPlayer">X</span></p>
+    <div id="message">  </div>
+    <button id="reset" onclick="resetGame()"> Reset Game</button>
+</body>
+
+</html>
