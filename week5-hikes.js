@@ -63,6 +63,7 @@ export default class Hikes {
     //show a list of hikes in the parentElement
     showHikeList() {
         renderHikeList(this.parentElement, hikeList);
+        addHikeListener();
         //this.showOneHike("Bechler Falls");
     }
 
@@ -75,6 +76,10 @@ export default class Hikes {
     // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
     addHikeListener() {
         // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
+        const list = Array.from(this.parentElement);
+        list.forEach(listItem => {
+            listItem.addEventListener("click", showOneHike(listItem.id));
+        });
 
         //Calls showOneHike() with onClick event listener
     }
@@ -94,7 +99,8 @@ function renderHikeList(parent, hikes) {
 
 function renderOneHikeLight(hike) {
     const item = document.createElement("li");
-    item.addEventListener("click", showOneHike(hike.name));
+    item.setAttribute("id","hike.name");
+    item.classList.add('light');
     item.innerHTML = `
         <h2>${hike.name}</h2>
         <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
