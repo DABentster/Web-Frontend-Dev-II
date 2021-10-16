@@ -69,7 +69,7 @@ export default class Hikes {
 
     // show one hike with full details in the parentElement
     showOneHike(hikeName) {
-        this.parentElement.innerHTML = "";
+        //this.parentElement.innerHTML = "";
         this.parentElement.appendChild(renderOneHikeFull(this.getHikeByName(hikeName)));
     }
 
