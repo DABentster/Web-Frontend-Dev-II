@@ -87,7 +87,7 @@ export default class Hikes {
 
     buildBackButton() {
         const backButton = document.createElement("button");
-        backButton.addEventListener("click", showHikeList());
+        backButton.addEventListener("click", this.showHikeList());
         return backButton;
     }
 }
