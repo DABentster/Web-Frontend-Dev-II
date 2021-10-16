@@ -63,7 +63,7 @@ export default class Hikes {
     //show a list of hikes in the parentElement
     showHikeList() {
         renderHikeList(this.parentElement, hikeList);
-        addHikeListener();
+        this.addHikeListener();
         //this.showOneHike("Bechler Falls");
     }
 
@@ -78,7 +78,7 @@ export default class Hikes {
         // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
         const list = Array.from(this.parentElement);
         list.forEach(listItem => {
-            listItem.addEventListener("click", showOneHike(listItem.id));
+            listItem.addEventListener("click", this.showOneHike(listItem.id));
         });
 
         //Calls showOneHike() with onClick event listener
