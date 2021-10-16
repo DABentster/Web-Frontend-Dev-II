@@ -36,7 +36,7 @@ const hikeList = [
     }
 ];
 
-const imgBasePath = "/img";
+const imgBasePath = "/img/";
 
 //on load grab the array and insert it into the page on load
 // window.addEventListener("load", () => {
@@ -82,6 +82,7 @@ export default class Hikes {
 }
 // methods responsible for building HTML.  Why aren't these in the class?  They don't really need to be, and by moving them outside of the exported class, they cannot be called outside the module...they become private.
 function renderHikeList(parent, hikes) {
+    parent.innerHTML = "";
     hikes.forEach(hike => {
         parent.appendChild(renderOneHikeLight(hike));
     });
