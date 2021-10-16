@@ -63,16 +63,20 @@ export default class Hikes {
     //show a list of hikes in the parentElement
     showHikeList() {
         renderHikeList(this.parentElement, hikeList);
+        showOneHike("Bechler Falls");
     }
 
     // show one hike with full details in the parentElement
     showOneHike(hikeName) {
-
+    //    this.parentElement.innerHTML = "";
+        this.parentElement.appendChild(renderOneHikeFull(getHikeByName(hikeName)));
     }
 
     // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
     addHikeListener() {
         // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
+
+        //Calls showOneHike() with onClick event listener
     }
 
     buildBackButton() {
@@ -90,23 +94,43 @@ function renderHikeList(parent, hikes) {
 
 function renderOneHikeLight(hike) {
     const item = document.createElement("li");
-    item.innerHTML = ` <h2>${hike.name}</h2>
+    item.innerHTML = `
+        <h2>${hike.name}</h2>
         <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
         <div>
-                <div>
-                    <h3>Distance</h3>
-                    <p>${hike.distance}</p>
-                </div>
-                <div>
-                    <h3>Difficulty</h3>
-                    <p>${hike.difficulty}</p>
-                </div>
+            <div>
+                <h3>Distance</h3>
+                <p>${hike.distance}</p>
+            </div>
+            <div>
+                <h3>Difficulty</h3>
+                <p>${hike.difficulty}</p>
+            </div>
         </div>`;
     return item;
 }
 
 function renderOneHikeFull(hike) {
     const item = document.createElement("li");
-
+    item.innerHTML = `<h2>${hike.name}</h2>
+        <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
+        <div>
+            <div>
+                <h3>Distance</h3>
+                <p>${hike.distance}</p>
+            </div>
+            <div>
+                <h3>Difficulty</h3>
+                <p>${hike.difficulty}</p>
+            </div>
+            <div>
+                <h3>Discription</h3>
+                <p>${hike.description}</p>
+            </div>
+            <div>
+                <h3>Directions</h3>
+                <p>${hike.directions}</p>
+            </div>
+        </div>`;
     return item;
 }
