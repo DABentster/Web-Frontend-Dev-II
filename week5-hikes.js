@@ -39,9 +39,9 @@ const hikeList = [
 const imgBasePath = "/img";
 
 //on load grab the array and insert it into the page on load
-window.addEventListener("load", () => {
-    showHikeList();
-});
+// window.addEventListener("load", () => {
+//     showHikeList();
+// });
 
 export default class Hikes {
     constructor(elementId) {
