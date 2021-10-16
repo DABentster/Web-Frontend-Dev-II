@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+main > h1 {
+    text-align: center;
+    background-color: #1b6674;
+    padding: 1em
+}

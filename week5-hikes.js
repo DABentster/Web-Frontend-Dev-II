@@ -63,12 +63,12 @@ export default class Hikes {
     //show a list of hikes in the parentElement
     showHikeList() {
         renderHikeList(this.parentElement, hikeList);
-        this.showOneHike("Bechler Falls");
+        //this.showOneHike("Bechler Falls");
     }
 
     // show one hike with full details in the parentElement
     showOneHike(hikeName) {
-    //    this.parentElement.innerHTML = "";
+        this.parentElement.innerHTML = "";
         this.parentElement.appendChild(renderOneHikeFull(this.getHikeByName(hikeName)));
     }
 
@@ -94,6 +94,7 @@ function renderHikeList(parent, hikes) {
 
 function renderOneHikeLight(hike) {
     const item = document.createElement("li");
+    item.addEventListener("click", showOneHike(hike.name));
     item.innerHTML = `
         <h2>${hike.name}</h2>
         <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
@@ -124,7 +125,7 @@ function renderOneHikeFull(hike) {
                 <p>${hike.difficulty}</p>
             </div>
             <div>
-                <h3>Discription</h3>
+                <h3>Description</h3>
                 <p>${hike.description}</p>
             </div>
             <div>
