@@ -63,7 +63,7 @@ export default class Hikes {
     //show a list of hikes in the parentElement
     showHikeList() {
         renderHikeList(this.parentElement, hikeList);
-        showOneHike("Bechler Falls");
+        this.showOneHike("Bechler Falls");
     }
 
     // show one hike with full details in the parentElement
