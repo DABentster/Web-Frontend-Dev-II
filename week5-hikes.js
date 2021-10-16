@@ -100,7 +100,7 @@ function renderHikeList(parent, hikes) {
 
 function renderOneHikeLight(hike) {
     const item = document.createElement("li");
-    item.setAttribute("id","hike.name");
+    item.setAttribute("id",hike.name);
     item.classList.add('light');
     item.innerHTML = `
         <h2>${hike.name}</h2>
