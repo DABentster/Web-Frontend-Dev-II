@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="David Bentley">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/week06.css" />
+    <script src="js/week06.js" type="module"></script>
+</head>
+
+<body>
+	<main>
+		<header>
+			<a href="index.html">Back to WDD 330 Assignments</a>
+		</header><h1>To-Do List</h1>
+		
+		<ul id="todo">
+			<!-- To-Do list -->
+		</ul>
+		<section class="filters-section">
+			<div id="task-counter">
+				<!-- Count of selected To-Do list tasks -->
+			</div>
+			| Filter by:
+			<div class="filter filter-selected" id="filter-all">
+				<p>All</p>
+			</div>
+			<div class="filter" id="filter-active">
+				<p>Active</p>
+			</div>
+			<div class="filter" id="filter-complete">
+				<p>Complete</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="new-task-section">
+		<input type="text" id="newTask" placeholder="Add New Task">
+		<button id="addTaskButton">Add</button>
+	</footer>
+</body>
+
+</html>
