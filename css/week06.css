@@ -130,9 +130,9 @@ main section .task-counter {
 }
 
 .new-task-section {
-    display:flex;
-    flex-flow: row wrap;
-    flex-shrink: 0;
+    /* display:flex;
+    flex-flow: row nowrap;
+    flex-shrink: 0; */
     margin: auto auto 1em auto;
     width: 100%;
     max-width: 500px;
