@@ -99,7 +99,7 @@ input[type=checkbox] {
 
 main > section {
     display:flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: .5em;
