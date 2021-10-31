@@ -1,0 +1,124 @@
+/*Hikes CSS*/
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-color: slategrey;
+}
+main > h1 {
+    text-align: center;
+    background-color: #1b6674;
+    padding: 1em;
+    margin-top: 0;
+    margin-bottom: -0.5em;
+}
+img {
+    max-width: 100%;
+}
+.hikeStyles {
+    padding: 0;
+    margin: 1em 0;
+    list-style-type: none;
+}
+.hikeStyles div {
+    padding: 0 0.5em;
+}
+.hikeStyles li > h2 {
+    text-align: center;
+    background-color: #07abc8;
+    margin-bottom: 0.5em;
+}
+
+/*Light Hikes CSS*/
+.light {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: slategrey;
+}
+.light > h2 {
+    width: 100%;
+    flex: 1 0 auto;
+}
+.light > div {
+    width: 40%;
+    margin-left: 1em;
+    flex: 1 1 auto;
+}
+
+.light h3 {
+    margin-bottom: -0.5em;
+}
+/*footer*/
+footer {
+    background-color: slategrey
+}
+footer > ul > li {
+    list-style-type: none;
+}
+
+/*Full Hike CSS*/
+.full {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: slategrey;
+}
+.full > h2 {
+    width: 100%;
+    flex: 1 0 auto;
+}
+.full h3 {
+    margin-bottom: -0.5em;
+}
+.full > div {
+    width: 40%;
+    margin-left: 1em;
+    flex: 1 1 auto;
+}
+
+/*Comment Button CSS*/
+button.commentButton {
+    font-size: 1em;
+    background: #1b6674;
+    color: black;
+    border: 0.25rem solid #1b6674;
+    padding: 0.85em 0.75em;
+    position: relative;
+    z-index: 1;
+    overflow:hidden;
+    margin: 1rem;  
+}
+button.commentButton:hover {
+    color: black;
+}
+button::after {
+    content: "";
+    background: #07abc8;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+button.commentButton::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+}
+button.commentButton:hover::after {
+    transform: skewX(-45deg) scale(1, 1)
+}
+
+/*Back Button*/
+.hidden{
+    display: none;
+}
+
+/*Textarea CSS*/
+textarea#newCommentField {
+    width: 100%;
+    outline: none;
+}

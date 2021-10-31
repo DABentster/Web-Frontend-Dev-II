@@ -151,5 +151,3 @@ function filterBy(category){
     }
     return category;
 }
-
-
