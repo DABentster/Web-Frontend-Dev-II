@@ -36,7 +36,7 @@ const hikeList = [
     }
 ];
 
-const imgBasePath = './img/';
+const imgBasePath = '/img/';
 
 export default class Hikes {
     constructor(elementId) {
@@ -114,7 +114,7 @@ function renderOneHikeLight(hike) {
     // setting this to make getting the details for a specific hike easier later.
     item.setAttribute('data-name', hike.name);
     item.innerHTML = ` <h2>${hike.name}</h2>
-<div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
+<div class="image"><img src="/img/${hike.imgSrc}" alt="${hike.imgAlt}"></div>
 <div>
         <div>
             <h3>Distance</h3>
