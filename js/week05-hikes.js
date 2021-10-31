@@ -34,7 +34,7 @@ const hikeList = [
     }
 ];
 
-const imgBasePath = "/img/";
+const imgBasePath = "./img/";
 
 export default class Hikes {
     constructor(elementId) {
