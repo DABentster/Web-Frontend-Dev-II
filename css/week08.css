@@ -8,7 +8,7 @@ html {
 } 
 body {
   color: #eee;
-  background-image: url(/img/space1.jpg);
+  background-image: url(./img/space1.jpg);
 }
 header h1 {
   color: #09DD6B;
