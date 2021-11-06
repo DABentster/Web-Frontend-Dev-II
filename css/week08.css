@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+html {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: 'Electrolize', sans-serif;
+} 
+body {
+  color: #eee;
+  background-image: url(/img/space1.jpg);
+}
+header h1 {
+  color: #09DD6B;
+}
+header h2 {
+  color: #FF8B00;
+}
+p {
+  margin: 1.5rem 0;
+}
+#nav,
+#footer {
+  display: flex;
+  flex-direction: row;
+}
+#nav a,
+#footer a {
+  color: #FF8B00;
+  padding: 0.25rem 1rem;
+}
