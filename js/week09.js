@@ -1,18 +1,25 @@
-function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+const keys = document.querySelectorAll('.key');
+const defaultMargin = parseInt(getComputedStyle(keys[0]).marginTop);
+
+keys.forEach(key => key.addEventListener('transitionend', unPlayKey));
+window.addEventListener('keydown', playKey);
+
+function playKey(e) {
+    if (e.repeat) return;
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    // console.log(audio);
     // console.log(key);
-    if (!audio) return;
-    audio.currentTime = 0;
-    audio.play();
+    if (!key) return;
     key.classList.add('playing');
+    playSound(e);
     moveKeyDown(key);
 }
 
-function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
-    this.classList.remove('playing');
+function playSound(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    // console.log(audio);
+    if (!audio) return;
+    audio.currentTime = 0;
+    audio.play();
 }
 
 function moveKeyDown(key) {
@@ -24,8 +31,7 @@ function moveKeyDown(key) {
     else key.style.marginTop = `${margin}px`;
 }
 
-const keys = document.querySelectorAll('.key');
-const defaultMargin = parseInt(getComputedStyle(keys[0]).marginTop);
-
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-window.addEventListener('keydown', playSound);
+function unPlayKey(e) {
+    if (e.propertyName !== 'transform') return;
+    this.classList.remove('playing');
+}
