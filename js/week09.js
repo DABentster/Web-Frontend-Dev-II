@@ -17,9 +17,7 @@ function removeTransition(e) {
 
 function moveKeyDown(key) {
     let margin = parseInt(getComputedStyle(key).marginTop);
-    // console.log(margin);
     margin += 10;
-    // console.log(margin);
     if (margin > 100) {
         key.style.marginTop = `${defaultMargin}px`;
     }
