@@ -1,0 +1,36 @@
+body {
+    background-color: #0d2044;
+}
+
+h1, span {
+    text-align: center;
+    color: #dbc97d;
+}
+
+ul {
+    background-color: #dbc97d;
+    box-shadow: 0 0 20px #dbba7d;
+    padding: 1em;
+    border-radius: 25px;
+    width: 70%;
+    margin: auto;
+}
+
+ul > li {
+    list-style-type: numbered;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: large;
+    color: #0d2044;
+}
+
+.hidden{
+    display: none;
+}
+
+#input {
+        margin: auto;
+        width: 35%;
+        padding: 10px;
+}
+
