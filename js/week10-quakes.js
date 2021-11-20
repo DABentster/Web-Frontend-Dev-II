@@ -1,4 +1,4 @@
-import { getJSON } from './js/week10-utilities.js';
+import { getJSON } from './week10-utilities.js';
 // Quake Model
 export default class Quake {
   constructor() {
