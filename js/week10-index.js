@@ -1,5 +1,5 @@
-// import { getJSON, getLocation } from './js/week10-utilities.js';
-import QuakesController from './js/week10-QuakesController.js';
+// import { getJSON, getLocation } from './week10-utilities.js';
+import QuakesController from './week10-QuakesController.js';
 
 // const baseUrl = 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2019-01-01&endtime=2019-02-02';
 
