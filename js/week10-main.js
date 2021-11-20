@@ -1,4 +1,4 @@
-import { getJSON, getLocation } from "./week10-utilities.js";
+import { getJSON, getLocation } from "./js/week10-utilities.js";
 
 const baseUrl =
   "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2020-01-01&endtime=2020-02-02";
