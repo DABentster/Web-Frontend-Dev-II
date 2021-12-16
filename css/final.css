@@ -14,7 +14,7 @@
 
 header img {
 	width: 100%;
-	max-width: 60px;
+	max-width: 50px;
 	vertical-align:middle;
 	margin-top: -8px;
 	display: inline;
@@ -52,9 +52,6 @@ header {
 	margin-right: 0.5em;
 }
 
-#detailsPosterNoImg {
-	height: 100px;
-}
 
 .poster {
 	height: 100px;
@@ -65,14 +62,30 @@ header {
 }
 
 #idDetailsPoster {
-	height: 350px;
+	height: 250px;
 	float: left;
-	margin-right: 1em;;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+
+#detailsPosterNoImg {
+	height: 100px;
 }
 
 #idDetailsTitle {
 	color: #861006;
 	font-size: 1.6em;
+}
+
+#moreDetails {
+	margin-top: 1em;
+	/* height: fit-content;
+	width: auto; */
+	max-width: 800px;
+	padding-bottom: 0.5em;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+	/* display: inline-block; */
 }
 
 #searchField, footer {
@@ -130,15 +143,6 @@ header {
 
 #savedMoviesList {
 	padding-top: 0.5em;
-}
-
-#moreDetails {
-	margin-top: 1em;
-	height: fit-content;
-	max-width: 800px;
-	padding-bottom: 0.5em;
-	margin-bottom: 1.5em;
-	display: inline-block;
 }
 
 .topBottomBorders {
