@@ -28,3 +28,7 @@ main {
     padding: 1em;
     color: #2F4F4F
 }
+
+ul{
+    list-style-type: none;
+}

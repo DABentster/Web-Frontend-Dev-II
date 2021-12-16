@@ -1,0 +1,198 @@
+.menu-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
+.menu-bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.menu-bar .tab-button{white-space:normal}
+.black-bar{color:#fff!important;background-color:#999999!important}
+.menu-bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.menu-bar .tab-button{white-space:normal}
+.tab-button:hover{color:#000!important;background-color:#ccc!important}
+.tab-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.tab-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.tab-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+.tab-button:first-child{background-color:#ccc;color:#000}
+.tab-button{width:100%;text-align:left;padding:8px 16px}
+.tab-selected{color:#fff!important;background:linear-gradient(0deg, rgba(120,120,120,0.5) 0%, rgba(187,187,207,0.5) 27%, rgba(244,250,252,0.5) 35%, rgba(180,180,196,0.5) 46%, rgba(153,153,153,0.5) 51%, rgba(247,253,255,0.5) 71%, rgba(238,243,245,0.5) 85%, rgba(163,163,163,0.5) 94%, rgba(219,219,240,0.5) 100%)!important;}
+
+header img {
+	width: 100%;
+	max-width: 60px;
+	vertical-align:middle;
+	margin-top: -8px;
+	display: inline;
+}
+
+body {
+	font-family: 'Trebuchet MS', sans-serif;
+	max-width: 800px;
+	min-width: 420px;
+    margin: auto;
+	background-color: rgb(219,219,240);
+}
+
+h1 {
+	text-align: center;
+}
+
+header {
+	background: linear-gradient(90deg, rgba(120,120,120,0.5) 0%, rgba(187,187,207,0.5) 27%, rgba(244,250,252,0.5) 35%, rgba(180,180,196,0.5) 46%, rgba(153,153,153,0.5) 51%, rgba(247,253,255,0.5) 71%, rgba(238,243,245,0.5) 85%, rgba(163,163,163,0.5) 94%, rgba(219,219,240,0.5) 100%);
+    border: solid 2px #999999;
+    border-radius: 10px 10px 0px 0px;
+	padding: 1em;
+	padding-bottom: 0em;
+}
+
+.resultsTitle, .savedMovieTitle {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #861006;
+}
+
+.posterNoImg {
+	height: 100px;
+	float: left;
+	margin-right: 0.5em;
+}
+
+#detailsPosterNoImg {
+	height: 100px;
+}
+
+.poster {
+	height: 100px;
+	transition: height 0.75s;
+	transition-delay: 0.15s;
+	float: left;
+	margin-right: 0.5em;
+}
+
+#idDetailsPoster {
+	height: 350px;
+	float: left;
+	margin-right: 1em;;
+}
+
+#idDetailsTitle {
+	color: #861006;
+	font-size: 1.6em;
+}
+
+#searchField, footer {
+	margin-left: 1em;
+}
+
+#searchResults {
+	background: linear-gradient(90deg, rgba(120,120,120,0.5) 0%, rgba(187,187,207,0.5) 27%, rgba(244,250,252,0.5) 35%, rgba(180,180,196,0.5) 46%, rgba(153,153,153,0.5) 51%, rgba(247,253,255,0.5) 71%, rgba(238,243,245,0.5) 85%, rgba(163,163,163,0.5) 94%, rgba(219,219,240,0.5) 100%);
+	background-color: rgb(255,228,171);
+	border: solid 2px #999999;
+    border-radius: 10px 10px 10px 10px;
+	border-top: 10px solid rgb(240,196,0);
+	padding-top: 1em;
+	display: none;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+#searchResultsTop, #searchResultsBottom, #noResultsError {
+	padding-left: 1em;
+}
+
+#searchResultsTop h2 {
+	margin-top: 0;
+}
+
+#searchResultsList li, #savedMoviesList li {
+	padding-top: 1em;
+	clear: both;
+}
+
+.error {
+	color: rgb(210,40,40);
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.success {
+	color: rgb(20,150,20);
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+#savedMovies {
+	background: linear-gradient(90deg, rgba(120,120,120,0.5) 0%, rgba(187,187,207,0.5) 27%, rgba(244,250,252,0.5) 35%, rgba(180,180,196,0.5) 46%, rgba(153,153,153,0.5) 51%, rgba(247,253,255,0.5) 71%, rgba(238,243,245,0.5) 85%, rgba(163,163,163,0.5) 94%, rgba(219,219,240,0.5) 100%);
+	border: solid 2px #999999;
+	background-color: rgb(255,202,206);
+    border-radius: 10px 10px 10px 10px;
+	border-top: 10px solid rgb(255,132,134);
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+#savedMoviesList {
+	padding-top: 0.5em;
+}
+
+#moreDetails {
+	margin-top: 1em;
+	height: fit-content;
+	max-width: 800px;
+	padding-bottom: 0.5em;
+	margin-bottom: 1.5em;
+	display: inline-block;
+}
+
+.topBottomBorders {
+	background: linear-gradient(90deg, rgba(120,120,120,0.5) 0%, rgba(187,187,207,0.5) 27%, rgba(244,250,252,0.5) 35%, rgba(180,180,196,0.5) 46%, rgba(153,153,153,0.5) 51%, rgba(247,253,255,0.5) 71%, rgba(238,243,245,0.5) 85%, rgba(163,163,163,0.5) 94%, rgba(219,219,240,0.5) 100%);
+	border: solid 2px #999999;
+    border-radius: 10px 10px 10px 10px;
+	border-top: 10px solid rgb(16,143,153);
+	padding-left: 2em;
+	background-color: rgb(204,255,227);
+	background-color: rgb(199,240,255);
+}
+
+#addMovieBtn {
+	margin-top: 1em;
+}
+
+#movieDataString {
+	display: none;
+}
+
+.savedMovieComments {
+	float: right;
+}
+
+.savedMovieCommentsArea {
+	height: 3.5em;
+	min-height: 3.5em;
+	min-width: 20em;
+	max-width: 28em;
+	max-height: 8em;
+	float: right;
+}
+
+.saveCommentsBtn {
+	float: right;
+	clear: right;
+}
+
+.clearFloats {
+	clear: both;
+}
+
+.commentsStatus {
+	font-weight: bold;
+	color: rgb(72,62,255);
+	float: right;
+	padding-right: 1em;
+}
+
+.displayNone {
+	display: none;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: opacity 1s;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Home Media Library</title>
+	<meta name="author" content="David Bentley">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./css/final.css" title="mdb-css">
+</head>
+
+<body>
+	<header>
+		<a href="index.html">Back to WDD 330 Assignments</a></br>
+		
+		<h1><img src="./img/film-strip-gold.png">&nbspHome Media Library&nbsp<img src="./img/film-strip-gold.png"></h1>
+		<p>Search for movies from the <a href="https://www.imdb.com/">Internet Movie Database (IMDb)</a></br>You can click on the details button to display movie details, save movies to your personal list, and make comments on saved movies.</p>
+	</header>
+	
+	<div class="menu-bar black-bar">
+		<!-- <button class="bar-item tab-button tablink" onclick="openTab(event,'moreDetailsTab')">Movie Details</button> -->
+		<button class="bar-item tab-button tablink tab-selected" onclick="openTab(event,'searchMoviesTab')">Search Movies</button>
+		<button class="bar-item tab-button tablink" onclick="openTab(event,'savedMoviesTab')">Saved Movies</button>
+	</div>
+
+	<!-- <div id="moreDetailsTab" class="navOpt"> style="display:none;" -->
+		<div id="moreDetails"></div>
+		<div id="addStatusMessage"></div>
+	<!-- </div> -->
+
+	<div id="searchMoviesTab" class="navOpt">
+		<p id="searchField">
+			<strong>Search for Movie Title:</strong><br/>
+			<input type="text" id="searchTitle">
+			<button id="searchTitleBtn" onclick="searchTitle()">Search</button>
+		</p>
+		<div id="searchResults"></div>
+	</div>
+
+	<div id="savedMoviesTab" style="display:none;" class="navOpt">
+		<div id="removalStatus"></div>
+		<div id="savedMovies"></div>
+	</div>
+
+	<hr>
+	<footer>
+		<p>Home Media Library searches IMDb using the <a href="https://www.omdbapi.com/?">OMDb API</a></br>All content, including images, does not belong to the author and was pulled from their database</br>Created by David Bentley for WDD 330 - Web Frontend Development II class at BYU-I (2021)</p>
+	</footer>
+	<script src="./js/final.js"></script>
+</body>
+
+</html>
